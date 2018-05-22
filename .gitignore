@@ -6,7 +6,6 @@
 !/var/cache
 /var/cache/*
 !var/cache/.gitkeep
-!/var/data
 !/var/log
 /var/log/*
 !var/log/.gitkeep
