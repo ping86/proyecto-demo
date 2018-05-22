@@ -3,7 +3,6 @@
 /node_modules/
 /phpunit.xml
 /.php_cs
-/var/*
 !/var/cache
 /var/cache/*
 !var/cache/.gitkeep
@@ -20,7 +19,6 @@
 ###> symfony/framework-bundle ###
 .env
 /public/bundles/
-/var/
 /vendor/
 ###< symfony/framework-bundle ###
 ###> symfony/phpunit-bridge ###
