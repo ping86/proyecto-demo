@@ -1,0 +1,19 @@
+version: '2'
+services:
+  demo:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ".:/app/"
+    ports:
+      - 6080:80
+    restart: always
+    env_file:
+      - .env
+    environment:
+      - ENV=dev
+      - APP_ENV=dev
+      - PATH=/var/www/html/bin:$PATH
+      - HTTPS_FORCE=off
+    container_name: demo
