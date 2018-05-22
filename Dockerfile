@@ -21,7 +21,7 @@ RUN curl -sL https://deb.nodesource.com/setup_9.x | bash -  && \
     ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts && \
     ssh-keyscan -t rsa bitbucket.org  >> ~/.ssh/known_hosts && \
 
-    composer install --optimize-autoloader --no-interaction --no-ansi --no-dev  && \
+    composer install --optimize-autoloader --no-interaction --no-ansi && \
 
     #Remove build dependencies
     service redis-server stop && \
