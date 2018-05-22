@@ -30,7 +30,7 @@ RUN curl -sL https://deb.nodesource.com/setup_9.x | bash -  && \
     apt-get remove -y build-essential && \
     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*  && \
 
-    mkdir var && \
+    mkdir -p var && \
 
     chown -R www-data:www-data var /var/ngx_pagespeed_cache
 
